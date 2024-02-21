@@ -1,14 +1,11 @@
 .main {
 }
-.main_container {
-  position: relative;
-}
 
 .main__image {
   width: 100%;
-  object-fit: cover;
+
   filter: brightness(50%);
-  position: absolute;
+  position: relative;
 }
 .main__logoContainer {
   display: flex;
@@ -16,6 +13,7 @@
 }
 .main__cookerLogo {
   position: absolute;
+  top: 10px;
   width: 150px;
   right: 15%;
   height: 100px;
@@ -42,6 +40,7 @@
   width: 100%;
   position: absolute;
   margin-top: 0;
+  top: 20px;
   left: 10%;
   height: 90vh;
 }

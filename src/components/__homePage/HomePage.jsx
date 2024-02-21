@@ -3,10 +3,11 @@ import main from '../../assets/mainPage.jpg';
 import styles from './homepage.module.css';
 import user from '../../assets/user.png';
 import heart from '../../assets/heart.png';
+import Card from './__card/Card';
 
 const Home = () => {
   return (
-    <div className={styles.main}>
+    <>
       <div className={styles.main__container}>
         <img src={main} className={styles.main__image} alt='Main Page' />
         <div className={styles.main__logoContainer}>
@@ -28,7 +29,6 @@ const Home = () => {
               үшін инновациялық қызмет!
             </p>
           </p>
-
           <p className={styles.main__subText}>
             Ингредиенттеріңізбен жасалған дәмді рецепттерді табыңыз! <br />{' '}
             Дүкенге бармай-ақ, өзіңізде бар нәрсені енгізіп, сәйкес <br />
@@ -40,7 +40,8 @@ const Home = () => {
           <button className={styles.main__tandau}>Өнімдерді таңдау</button>
         </div>
       </div>
-    </div>
+      <Card></Card>
+    </>
   );
 };
 
