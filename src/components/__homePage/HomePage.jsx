@@ -24,13 +24,20 @@ const Home = () => {
         <div className={styles.main__textContainer}>
           <p className={styles.main__text}>
             Үйде тамақ әзірлегенді ұнататындар
-            <p className={styles.main__subtext}>үшін инновациялық қызмет!</p>
+            <p className={styles.main__subtextMain}>
+              үшін инновациялық қызмет!
+            </p>
           </p>
-          <p>
-            Ингредиенттеріңізбен жасалған дәмді рецепттерді табыңыз! Дүкенге
-            бармай-ақ, өзіңізде бар нәрсені енгізіп, сәйкес келетін рецепттерді
-            алыңыз!
+
+          <p className={styles.main__subText}>
+            Ингредиенттеріңізбен жасалған дәмді рецепттерді табыңыз! <br />{' '}
+            Дүкенге бармай-ақ, өзіңізде бар нәрсені енгізіп, сәйкес <br />
+            келетін рецепттерді алыңыз!
           </p>
+        </div>
+        <div className={styles.main__buttonContainer}>
+          <button className={styles.main__izdeu}>Рецепттерді іздеу...</button>
+          <button className={styles.main__tandau}>Өнімдерді таңдау</button>
         </div>
       </div>
     </div>

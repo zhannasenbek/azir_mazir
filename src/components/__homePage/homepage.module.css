@@ -10,19 +10,6 @@
   filter: brightness(50%);
   position: absolute;
 }
-.main__text {
-  position: absolute;
-  font-family: Arial;
-  font-size: 40px;
-
-  font-weight: 700;
-  line-height: 0;
-  color: #fefefe;
-}
-.main__subtext {
-  text-align: right;
-}
-
 .main__logoContainer {
   display: flex;
   justify-content: flex-end;
@@ -51,8 +38,58 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   position: absolute;
+  margin-top: 0;
   left: 10%;
   height: 90vh;
+}
+.main__subText {
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fefefe;
+  padding-top: 0;
+  margin: 0;
+  text-align: right;
+  margin-left: 9%;
+}
+.main__text {
+  font-family: Arial;
+  font-size: 40px;
+
+  font-weight: 700;
+  line-height: 0;
+  color: #fefefe;
+  margin-bottom: 0;
+}
+.main__subtextMain {
+  text-align: right;
+}
+.main__buttonContainer {
+  position: absolute;
+  row-gap: 20px;
+  display: flex;
+  gap: 20px;
+  bottom: 20%;
+  left: 43%;
+}
+.main__tandau {
+  background-color: #fa9344;
+  width: 300px;
+  height: 72px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 22px;
+  color: #fefefe;
+}
+.main__izdeu {
+  background-color: #fa9344;
+  width: 300px;
+  height: 72px;
+  border: 0;
+  border-radius: 50px;
+  color: #fefefe;
+  font-size: 22px;
 }
