@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from './card.module.css';
-import CardElement from './__cardElement/CardElement';
+
 const Card = () => {
   return (
     <div className={styles.menu}>
       <div className={styles.menu__mainText}>Бұл қалай жұмыс істейді?</div>
-      <CardElement digit={1} text={'Өзіңізде бар өнімдерді белгілеп шығасыз'} />
-      <CardElement digit={2} text={'Рецепт іздеу батырмасын басасыз'} />
-      <CardElement digit={3} text={'Рецепт іздеу батырмасын басасыз'} />
-      <CardElement digit={4} text={'Рецепт іздеу батырмасын басасыз'} />
+      <div className={styles.cardContainer}>
+        <div className={styles.card}>1 Өзіңізде бар өнімдерді белгілеп шығасыз</div>
+        <div className={styles.card}>2 Рецепт іздеу батырмасын басасыз</div>
+        <div className={styles.card}>3 Өзіңізге ұнаған рецептін таңдайсыз</div>
+        <div className={styles.card}>4 Өзіңізге ұнаған рецептін таңдайсыз</div>
+      </div>
     </div>
   );
 };
