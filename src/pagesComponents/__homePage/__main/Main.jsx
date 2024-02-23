@@ -1,13 +1,11 @@
 import React from 'react';
-import main from '../../assets/mainPage.jpg';
-import styles from './homepage.module.css';
-import user from '../../assets/user.png';
-import heart from '../../assets/heart.png';
-import Card from './__card/Card';
-
-const Home = () => {
+import main from '../../../assets/mainPage.jpg';
+import user from '../../../assets/user.png';
+import heart from '../../../assets/heart.png';
+import styles from './main.module.css';
+const Main = () => {
   return (
-    <>
+    <div>
       <div className={styles.main__container}>
         <img src={main} className={styles.main__image} alt='Main Page' />
         <div className={styles.main__logoContainer}>
@@ -40,9 +38,8 @@ const Home = () => {
           <button className={styles.main__tandau}>Өнімдерді таңдау</button>
         </div>
       </div>
-      <Card></Card>
-    </>
+    </div>
   );
 };
 
-export default Home;
+export default Main;

@@ -25,10 +25,14 @@ const Card = () => {
     <div className={styles.menu}>
       <div className={styles.menu__mainText}>Бұл қалай жұмыс істейді?</div>
       <div className={styles.cardContainer}>
-        {card.map((item, index)=>(
-        <CardElement key={index} digit={item.number} text={item.text}></CardElement>
+        {card.map((item, index) => (
+          <CardElement
+            key={index}
+            digit={item.number}
+            text={item.text}></CardElement>
         ))}
       </div>
+      <hr></hr>
     </div>
   );
 };
