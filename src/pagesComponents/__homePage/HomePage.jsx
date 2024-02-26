@@ -6,11 +6,11 @@ import Footer from '../../components/__footer/Footer';
 
 const Home = () => {
   return (
-    <>
+    <div>
       <Main></Main>
       <Card></Card>
       <Footer></Footer>
-    </>
+    </div>
   );
 };
 
