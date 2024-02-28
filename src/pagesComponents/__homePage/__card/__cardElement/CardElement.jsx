@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './cardElement.module.css';
 const CardElement = ({ digit, text, src }) => {
-  console.log(src);
   return (
-    <div>
+    <div style={{ display: 'flex', position: 'relative' }}>
       <div className={styles.card}>
         <div className={styles.card__digit}>{digit}</div>
         <div className={styles.card__imgContainer}>
@@ -11,6 +10,7 @@ const CardElement = ({ digit, text, src }) => {
         </div>
         <div className={styles.card__text}>{text}</div>
       </div>
+      {digit < 4 && <div className={styles.card__line}></div>}
     </div>
   );
 };

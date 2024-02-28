@@ -5,30 +5,29 @@ import secondCard from '../../../assets/secondCard.svg';
 import thirdCard from '../../../assets/thirdCard.svg';
 import fourthCard from '../../../assets/fourth.svg';
 import CardElement from './__cardElement/CardElement';
-
+ const card = [
+  {
+    number: 1,
+    src: firstCard,
+    text: 'Өзіңізде бар өнімдерді белгілеп шығасыз',
+  },
+  {
+    number: 2,
+    src: secondCard,
+    text: 'Рецепт іздеу батырмасын басасыз',
+  },
+  {
+    number: 3,
+    src: thirdCard,
+    text: 'Өзіңізге ұнаған рецептін таңдайсыз',
+  },
+  {
+    number: 4,
+    src: fourthCard,
+    text: 'Өзіңізге ұнаған рецептін таңдайсыз',
+  },
+]
 const Card = () => {
-  const [card, setCard] = useState([
-    {
-      number: 1,
-      src: firstCard,
-      text: 'Өзіңізде бар өнімдерді белгілеп шығасыз',
-    },
-    {
-      number: 2,
-      src: secondCard,
-      text: 'Рецепт іздеу батырмасын басасыз',
-    },
-    {
-      number: 3,
-      src: thirdCard,
-      text: 'Өзіңізге ұнаған рецептін таңдайсыз',
-    },
-    {
-      number: 4,
-      src: fourthCard,
-      text: 'Өзіңізге ұнаған рецептін таңдайсыз',
-    },
-  ]);
   return (
     <div className={styles.menu}>
       <div className={styles.menu__mainText}>Бұл қалай жұмыс істейді?</div>

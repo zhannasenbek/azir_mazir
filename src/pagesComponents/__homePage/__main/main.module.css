@@ -7,41 +7,15 @@
   filter: brightness(50%);
   position: relative;
 }
-/* .main__logoContainer {
-  display: flex;
-  justify-content: flex-end;
-} */
-.main__cookerLogo {
-  position: absolute;
-  top: 10px;
-  width: 150px;
-  right: 15%;
-  height: 100px;
-}
-.main__userLogo {
-  position: absolute;
-  top: 35px;
-  right: 13%;
-  width: 30px;
-  height: 30px;
-}
-.main__heartLogo {
-  position: absolute;
-  top: 35px;
-  right: 10%;
-  width: 30px;
-  height: 30px;
-}
 .main__textContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   position: absolute;
   margin-top: 0;
   top: 20px;
-  left: 10%;
+  left: 37%;
   height: 90vh;
 }
 .main__subText {
@@ -92,18 +66,4 @@
   color: #fefefe;
   font-size: 22px;
 }
-.main__header {
-  background-color: #0000004d;
-  opacity: 0.5;
-  position: absolute;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 101px;
-}
-.main__logo {
-  position: absolute;
-  left: 0;
-  width: 172px;
-  height: 80px;
-}
+

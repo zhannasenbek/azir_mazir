@@ -1,23 +1,15 @@
 import React from 'react';
 import main from '../../../assets/mainPage.jpg';
-import user from '../../../assets/user.png';
-import heart from '../../../assets/heart.png';
-import logo from '../../../assets/logo.svg';
+
 import styles from './main.module.css';
+import Navbar from '../../../components/__navbar/Navbar';
 const Main = () => {
   return (
     <div>
       <div className={styles.main__container}>
         <img src={main} className={styles.main__image} alt='Main Page' />
 
-        <header className={styles.main__header}>
-          <img src={logo} className={styles.main__logo}></img>
-          <img src={user} className={styles.main__userLogo} alt='User Logo' />
-          <img
-            src={heart}
-            className={styles.main__heartLogo}
-            alt='hear Logo'></img>
-        </header>
+        <Navbar></Navbar>
 
         <div className={styles.main__textContainer}>
           <p className={styles.main__text}>
