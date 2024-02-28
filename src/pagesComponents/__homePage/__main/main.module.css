@@ -7,10 +7,10 @@
   filter: brightness(50%);
   position: relative;
 }
-.main__logoContainer {
+/* .main__logoContainer {
   display: flex;
   justify-content: flex-end;
-}
+} */
 .main__cookerLogo {
   position: absolute;
   top: 10px;
@@ -75,20 +75,35 @@
   left: 43%;
 }
 .main__tandau {
-  background-color: #fa9344;
+  background-color: #418611;
   width: 300px;
-  height: 72px;
+  height: 50px;
   border: 0;
   border-radius: 50px;
   font-size: 22px;
   color: #fefefe;
 }
 .main__izdeu {
-  background-color: #fa9344;
+  background-color: #418611;
   width: 300px;
-  height: 72px;
+  height: 50px;
   border: 0;
   border-radius: 50px;
   color: #fefefe;
   font-size: 22px;
+}
+.main__header {
+  background-color: #0000004d;
+  opacity: 0.5;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 101px;
+}
+.main__logo {
+  position: absolute;
+  left: 0;
+  width: 172px;
+  height: 80px;
 }
