@@ -1,5 +1,7 @@
 import React from 'react';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo1.svg';
+import inst from '../../assets/instagram.svg';
+import youtube from '../../assets/youtube.svg';
 import styles from './footer.module.css';
 const Footer = () => {
   return (
@@ -22,6 +24,20 @@ const Footer = () => {
       <div className={styles.footer__buttonContainer}>
         <button className={styles.footer__tirkeluButton}>Тіркелу</button>
         <button className={styles.footer_kiruButton}>Кіру</button>
+      </div>
+      <hr className={styles.footer__hr}></hr>
+      <div className={styles.footer__bottomContainer}>
+        <label>© Photo, Inc. 2019. We love our users!</label>
+        <label>
+          Құпиялылық саясаты және Қызмет көрсету шарттарына сілтемелер.
+        </label>
+        <div style={{ display: 'flex', marginTop: '10px' }}>
+          <label>Follow us:</label>
+          <div>
+            <img src={inst} className={styles.footer__instLogo}></img>
+            <img src={youtube} className={styles.footer__youtubeLogo}></img>
+          </div>
+        </div>
       </div>
     </footer>
   );
