@@ -16,7 +16,6 @@ const Form = () => {
     navigate(path);
   };
   console.log(activeTabIndex);
-
   return (
     <div className={styles.background}>
       <form className={styles.form}>
@@ -39,16 +38,6 @@ const Form = () => {
             </Tab>
           </TabList>
         </Tabs>
-
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            marginTop: '20px',
-          }}>
-          <Input placeholder={'Аты'}></Input>
-          <Input placeholder={'Тегі'}></Input>
-        </div>
         <div
           style={{
             display: 'flex',
@@ -60,23 +49,14 @@ const Form = () => {
           }}>
           <Input placeholder={'Email'}></Input>
           <Input placeholder={'Құпия сөз'}></Input>
-          <Input placeholder={'Құпиясөзді қайтала'}></Input>
-          <div style={{ display: 'flex' }}>
-            <Input placeholder={'Жасы'}></Input>
-            <Input placeholder={'Салмағы'}></Input>
-          </div>
-        </div>
-        <div style={{ marginLeft: '30px', marginTop: '10px' }}>
-          <input type='checkbox' style={{ accentColor: '#418611' }}></input>
-          <label>Келісім</label>
         </div>
         <div
           style={{
             display: 'flex',
             justifyContent: 'center',
-            marginTop: '20px',
+            marginTop: '40px',
           }}>
-          <Button text={'Тіркелу'}></Button>
+          <Button text={'Кіру'}></Button>
         </div>
       </form>
     </div>
